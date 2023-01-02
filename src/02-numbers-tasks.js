@@ -180,8 +180,8 @@ function getParallelepipedDiagonal(a, b, c) {
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(/* n, p */) {
-  throw new Error('Not implemented');
+function roundToPowerOfTen(n, p) {
+  return Math.round(n / 10 ** p) * 10 ** p;
 }
 
 /**
@@ -223,8 +223,8 @@ function isPrime(n) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(/* value, def */) {
-  throw new Error('Not implemented');
+function toNumber(v, d) {
+  return Number(v) ? Number(v) : d;
 }
 
 module.exports = {
