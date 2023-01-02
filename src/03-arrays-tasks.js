@@ -164,7 +164,7 @@ function insertItem(arr, item, ind) {
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'a', 'b', 'c' ]
  */
 function getHead(arr, n) {
-  return arr.filter((e, i) => { if (i < n) return e; });
+  return arr.filter((e, i) => { if (i < n) return e; return false; });
 }
 
 
@@ -179,7 +179,7 @@ function getHead(arr, n) {
  *    [ 'a', 'b', 'c', 'd'], 3  => [ 'b', 'c', 'd' ]
  */
 function getTail(arr, n) {
-  return arr.filter((e, i) => { if (arr.length - 1 - n < i) return e; });
+  return arr.filter((e, i) => { if (arr.length - 1 - n < i) return e; return false; });
 }
 
 
