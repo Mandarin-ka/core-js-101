@@ -17,5 +17,9 @@ module.exports = {
   },
   rules: {
     "linebreak-style": 0,
+    "no-plusplus": 0,
+    "array-callback-return": 0,
+    "no-return-assign": 0,
+    'consistent-return': 0,
   },
 };

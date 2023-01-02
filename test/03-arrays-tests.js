@@ -297,8 +297,8 @@ describe('03-arrays-tasks', () => {
     ].forEach((data) => {
       const actual = tasks.toCsvText(data.arr);
       assert.equal(
-        data.expected,
         actual,
+        data.expected,
       );
     });
   });
@@ -689,8 +689,8 @@ describe('03-arrays-tasks', () => {
       {
         start: -5,
         end: -3,
-        expected: [-5, -4 ,-3],
-      }
+        expected: [-5, -4, -3],
+      },
     ].forEach((data) => {
       const actual = tasks.getIntervalArray(data.start, data.end);
       assert.deepEqual(
